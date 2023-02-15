@@ -1,0 +1,25 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: hello
+spec:
+  params:
+    - name: person
+      description: Name of person to greet
+      default: World
+      type: string
+  steps:
+    - name: write-hello
+      image: openjdk:11
+      script: |
+        #!/usr/bin/env bash
+        echo Preparing greeting
+        echo Hello $(params.person) > /tekton/home/hello.txt
+        sleep 2
+        echo Done!
+    - name: say-hello
+      image: openjdk:11
+      script: |
+        #!/usr/bin/env bash
+        value=$(<"/tekton/home/hello.txt")
+        echo "$value"

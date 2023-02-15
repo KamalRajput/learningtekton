@@ -1,0 +1,16 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: hello
+spec:
+  params:
+    - name: person
+      description: Name of person to greet
+      default: World
+      type: string
+  steps:
+    - name: say-hello
+      image: openjdk:11
+      command:
+        - /bin/bash
+      args: ['-c', 'echo Hello $(params.person)']

@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: hello
+spec:
+  steps:
+    - name: hellofromtekton
+      image: openjdk:11
+      command:
+        - /bin/bash
+      args: ['-c', 'echo Hello World']
