@@ -10,7 +10,7 @@ spec:
         targetPath: code
   steps:
     - name: count
-      image: registry.access.redhat.com/ubi8/ubi
+      image: openjdk:11
       workingDir: /workspace
       command:
         - /bin/bash

@@ -69,7 +69,7 @@ spec:
       type: string
   steps:
     - name: say-hello
-      image: registry.access.redhat.com/ubi8/ubi
+      image: openjdk:11
       command:
         - /bin/bash
       args: ['-c', 'echo Hello $(params.person)']
@@ -106,7 +106,7 @@ spec:
       type: string
   steps:
     - name: write-hello
-      image: registry.access.redhat.com/ubi8/ubi
+      image: openjdk:11
       script: |
         #!/usr/bin/env bash
         echo Preparing greeting
@@ -151,7 +151,7 @@ spec:
       type: string
   steps:
     - name: say-it
-      image: registry.access.redhat.com/ubi8/ubi
+      image: openjdk:11
       command:
         - /bin/bash
       args: ['-c', 'sleep $(params.pause-duration) && echo $(params.say-what)']
@@ -268,7 +268,7 @@ spec:
         targetPath: code
   steps:
     - name: count
-      image: registry.access.redhat.com/ubi8/ubi
+      image: openjdk:11
       workingDir: /workspace
       command:
         - /bin/bash

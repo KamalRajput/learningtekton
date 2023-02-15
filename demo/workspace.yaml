@@ -30,7 +30,7 @@ spec:
     - name: output
   steps:
     - name: write
-      image: registry.access.redhat.com/ubi8/ubi
+      image: openjdk:11
       command:
         - /bin/bash
       args: ['-c', 'echo hello > $(workspaces.output.path)/hello.txt && echo done']
@@ -44,7 +44,7 @@ spec:
     - name: output
   steps:
     - name: read
-      image: registry.access.redhat.com/ubi8/ubi
+      image: openjdk:11
       command:
         - /bin/bash
       args: ['-c', 'cat $(workspaces.output.path)/hello.txt']
