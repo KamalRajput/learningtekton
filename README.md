@@ -31,6 +31,11 @@ The Tekton Dashboard is not exposed outside the cluster by default, but we can a
 ```bash
 http://localhost:9097/
 ```
+![image](https://user-images.githubusercontent.com/34761964/219353770-5aa8d3f8-a7f6-487a-802e-e4cf72e82918.png)
+
+
+![image](https://user-images.githubusercontent.com/34761964/219353039-a634bd1f-468c-4704-8e60-dd1e9fbfff9a.png)
+
 
 ## Create a Hello World task
 
