@@ -16,6 +16,21 @@ Then, install Tekton pipelines on your cluster.
 ```bash
 kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 ```
+## Setting up Tekton Dashboard 
+
+First you have to install the latest version of tekton dashboard using Kubectl:
+```bash
+kubectl apply --filename https://storage.googleapis.com/tekton-releases/dashboard/latest/release-full.yaml
+```
+You can monitor the installation :
+```bash
+kubectl get pods --namespace tekton-pipelines --watch
+```
+## Accessing Tekton Dashboard
+The Tekton Dashboard is not exposed outside the cluster by default, but we can access it by port-forwarding to the tekton-dashboard Service on port 9097.
+```bash
+http://localhost:9097/
+```
 
 ## Create a Hello World task
 
