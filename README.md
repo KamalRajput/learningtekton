@@ -266,6 +266,10 @@ If you apply this new Pipeline and run it with the Tekton CLI tool, you should s
 kubectl apply -f ./demo/06-pipeline-order.yaml
 tkn pipeline start say-things-in-order --showlog
 ```
+![image](https://user-images.githubusercontent.com/34761964/219356513-63d9e1ec-1246-4476-b184-f846e79c6c49.png)
+![image](https://user-images.githubusercontent.com/34761964/219357276-f1533cb9-bcdb-4191-9281-774dc81d5b03.png)
+![image](https://user-images.githubusercontent.com/34761964/219357914-25809ccb-93a2-4d85-a073-29c5fee4b3f0.png)
+
 
 ## Resources
 
