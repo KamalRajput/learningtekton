@@ -16,12 +16,15 @@ Follow the link  to install chocolatey :
 * [chocolatey](https://chocolatey.org/install)
 
 Once chocolatey is installed , install tekton cli using below command:
-choco install tektoncd-cli --confirm
-
-Then, install Tekton pipelines on your cluster.
-
 ```bash
+choco install tektoncd-cli --confirm
+```
+#### Then, install Tekton pipelines on your cluster.
 kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
+
+#### Tekton team has not updated CLI to use latest pipeline release, because of which there is an error when executing tasks using tkn. As a workaround i have switched back to older pipeline version. The issue is being tracked under https://github.com/tektoncd/cli/issues/1837
+```bash
+kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/previous/v0.42.0/release.yaml
 ```
 ## Setting up Tekton Dashboard 
 
