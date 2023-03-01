@@ -35,6 +35,12 @@ kubectl get pods --namespace tekton-pipelines --watch
 ```
 ## Accessing Tekton Dashboard
 The Tekton Dashboard is not exposed outside the cluster by default, but we can access it by port-forwarding to the tekton-dashboard Service on port 9097.
+
+Assuming tekton-pipelines is the install namespace for the Dashboard, run the following command:
+
+##### kubectl --namespace tekton-pipelines port-forward svc/tekton-dashboard 9097:9097
+
+Now access the dasboard using url:
 ```bash
 http://localhost:9097/
 ```
