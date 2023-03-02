@@ -368,5 +368,7 @@ It is important to note that PipelineResources is still in alpha. The Tekton cor
 If you want to keep learning more about Tekton, check out these resources:
 
 * https://tekton.dev - The main tekton website
+* https://github.com/tektoncd  - Tekton Github Repo
+* https://github.com/tektoncd/community - Tekton Community 
 * https://hub-preview.tekton.dev - Tekton Hub, where you can find reusable tasks and pipelines
 * https://developers.redhat.com/topics/ci-cd - Developer-facing info on CI/CD and Tekton
