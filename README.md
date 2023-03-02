@@ -347,7 +347,7 @@ spec:
   type: git
   params:
     - name: url
-      value: https://github.com/KamalRajput/Tekton-Basics.git
+      value: https://github.com/KamalRajput/learningtekton.git
 ```
 
 Once you have all the required pieces, you can apply this file to the cluster again, and start this pipelinerun. When you begin the Pipeline with the CLI, you will be prompted on the git resource to use. You can either use the resource you've just created or create your own. You could also use the `--resource` parameter with the CLI to specify which resources to use.
