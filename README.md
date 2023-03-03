@@ -360,7 +360,7 @@ tkn pipeline start count --showlog --resource git-repo=git-repo
 
 ## Workspaces
 
-It is important to note that PipelineResources is still in alpha. The Tekton core team questions whether they should stay in the spec or not. In the latest version of Tekton, `workspaces` were added to share file systems between various tasks in a Pipeline. You can find an example of a pipeline using a workspace in the file workspace.yaml. Workspaces require the usage of PersistentVolumes and PersistentVolumeClaims, which are out of scope for this lab.
+It is important to note that PipelineResources is still in alpha. The Tekton core team questions whether they should stay in the spec or not. In the latest version of Tekton, `workspaces` were added to share file systems between various tasks in a Pipeline. You can find an example of a pipeline using a workspace in the file workspace.yaml. Workspaces require the usage of PersistentVolumes and PersistentVolumeClaims.
 
 ```
 ## More Resources
@@ -368,5 +368,7 @@ It is important to note that PipelineResources is still in alpha. The Tekton cor
 If you want to keep learning more about Tekton, check out these resources:
 
 * https://tekton.dev - The main tekton website
+* https://github.com/tektoncd  - Tekton Github Repo
+* https://github.com/tektoncd/community - Tekton Community 
 * https://hub-preview.tekton.dev - Tekton Hub, where you can find reusable tasks and pipelines
 * https://developers.redhat.com/topics/ci-cd - Developer-facing info on CI/CD and Tekton
